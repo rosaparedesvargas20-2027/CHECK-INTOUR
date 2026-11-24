@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CHECK-IN TOURS</title>
+    <link rel="stylesheet" href="css/mexico.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+   <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Check-In Tours" class="logo-img">
+                <div>
+                    <span class="logo-title">CHECK-IN TOURS<span>.</span></span>
+                    <span class="logo-subtitle">Viajando por el Mundo</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" aria-label="Navegación principal">
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="#destinos" class="nav-link">Destinos</a>
+                <a href="#puentes" class="nav-link">Puentes Culturales</a>
+                <a href="reserva.html">Reservar Tour</a> 
+            </nav>
+
+            <a href="pasaporte.html" class="nav-passport" title="Abrir mi Pasaporte Postal">
+                <span>Pasaporte</span>
+                <span class="badge" id="navPassportBadge">0/20</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO CON VIDEO DE FONDO -->
+    <section class="destino-hero">
+        <img class="hero-bg-video" src="img/mexico.jpg" autoplay muted loop playsinline></img>
+        <div class="hero-bg-overlay"></div>
+
+        <div class="destino-hero-content">
+            <a href="index.html" class="back-link">← Volver a Destinos</a>
+            <span class="tag-pill">MÉXICO • NORTE Y MESOAMÉRICA</span>
+            <h2>México: Historia Viva, Color y Tradición</h2>
+            <p>Plazas monumentales, muralismo y arquitectura colonial, mercados llenos de aromas y un intercambio artístico y gastronómico que conecta a México con el Perú.</p>
+        </div>
+    </section>
+
+    <!-- GALERÍA EN CUADRITOS (VIDEOS Y FOTOS) -->
+    <main class="destino-container">
+        <div class="section-header">
+            <h3 class="gold-title">Imperdibles en México</h3>
+            <p class="section-desc">Explora su patrimonio, arte y escenas cotidianas entre clips en movimiento y postales.</p>
+        </div>
+
+        <div class="media-grid">
+            <!-- Cuadrito 1: Video -->
+            <article class="media-card">
+                <div class="media-box">
+                    <video src="img/Top 10 Places in the Centro Historico of Mexico City.mp4" autoplay muted loop playsinline></video>
+                    <span class="media-badge">VIDEO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">CORAZÓN HISTÓRICO</span>
+                    <h4>Centro Histórico y Zócalo</h4>
+                    <p>Plazas amplias, palacios virreinales, casonas de tezontle y el pulso cultural en el centro de la ciudad.</p>
+                </div>
+            </article>
+
+            <!-- Cuadrito 2: Foto -->
+            <article class="media-card">
+                <div class="media-box">
+                    <img src="img/coyacan.jpg" alt="Coyoacán y barrios tradicionales en México">
+                    <span class="media-badge">FOTO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">ARTE Y BARRIOS</span>
+                    <h4>Coyoacán y Cultura Visual</h4>
+                    <p>Calles arboladas, plazas con fuentes, galerías y el legado del muralismo y el color en la vida cotidiana.</p>
+                </div>
+            </article>
+
+            <!-- Cuadrito 3: Video -->
+            <article class="media-card">
+                <div class="media-box">
+                    <video src="img/10 Tradiciones y Costumbres Populares de México 🌮.mp4" autoplay muted loop playsinline></video>
+                    <span class="media-badge">VIDEO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">IDENTIDAD Y MÚSICA</span>
+                    <h4>Música, Fiestas y Artesanía</h4>
+                    <p>Bordados, cerámica, mariachi y celebraciones donde la memoria familiar se transmite de generación en generación.</p>
+                </div>
+            </article>
+
+            <!-- Cuadrito 4: Foto -->
+            <article class="media-card">
+                <div class="media-box">
+                    <img src="img/platos-ingredientes-comida-mexicana.jpg" alt="Gastronomía y mercados en México">
+                    <span class="media-badge">FOTO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">SABORES Y MERCADOS</span>
+                    <h4>Mercados y Cocina Mexicana</h4>
+                    <p>Maíz, chiles, salsas frescas y antojitos tradicionales que hacen de cada mercado un recorrido de sabores.</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- PUENTE CULTURAL MÉXICO - LIMA -->
+        <section class="bridge-box">
+            <div class="bridge-text">
+                <span class="tag-pill">PUENTE CULTURAL • MÉXICO ↔ LIMA</span>
+                <h3>Del Legado Mesoamericano y Virreinal al Encuentro en Lima</h3>
+                <p>México y el Perú comparten raíces históricas, el protagonismo del maíz y una profunda tradición artística y gastronómica: desde el diálogo visual del muralismo y la gráfica hasta el intercambio de sabores y relatos entre ambas culturas.</p>
+            </div>
+            <div class="bridge-media">
+                <img src="img/Conexión Lima Trujillo (1).png" alt="Conexión cultural entre México y Lima">
+            </div>
+        </section>
+    </main>
+<script src="js/mexico.js"></script>
+<a href="php/mexico.php" class="btn-link-php"></a>
+</body>
+</html>

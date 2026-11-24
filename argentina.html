@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECK-IN TOURS</title>
+    <link rel="stylesheet" href="css/argentina.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo Check-In Tours" class="logo-img" onerror="this.style.display='none'">
+            <div>
+                <h1 class="brand-title">CHECK-IN TOURS<span>.</span></h1>
+                <p class="brand-sub">VIAJANDO POR EL MUNDO</p>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#destinos" class="active">Destinos</a>
+            <a href="index.html#puentes">Puentes Culturales</a>
+            <a href="reserva.html">Reservar Tour</a>
+        </nav>
+
+        <a href="pasaporte.html" class="nav-passport" title="Abrir mi Pasaporte Postal">
+                <span>Pasaporte</span>
+                <span class="badge" id="navPassportBadge">0/20</span>
+            </a>
+    </header>
+
+    <!-- HERO CON VIDEO DE FONDO -->
+    <section class="destino-hero">
+        <img class="hero-bg-video" src="img/buenosaires.jpg" autoplay muted loop playsinline></img>
+        <div class="hero-bg-overlay"></div>
+
+        <div class="destino-hero-content">
+            <a href="index.html" class="back-link">← Volver a Destinos</a>
+            <span class="tag-pill">ARGENTINA • CONO SUR</span>
+            <h2>Argentina: Arquitectura, Tango y Vida Cultural</h2>
+            <p>Bulevares arbolados, librerías y cafés con historia, barrios llenos de arte callejero y una cercanía cultural y artística profunda con el Perú.</p>
+        </div>
+    </section>
+
+    <!-- GALERÍA EN CUADRITOS (VIDEOS Y FOTOS) -->
+    <main class="destino-container">
+        <div class="section-header">
+            <h3 class="gold-title">Imperdibles en Argentina</h3>
+            <p class="section-desc">Recorre sus calles emblemáticas, barrios creativos y tradiciones en clips y postales.</p>
+        </div>
+
+        <div class="media-grid">
+            <!-- Cuadrito 1: Video -->
+            <article class="media-card">
+                <div class="media-box">
+                    <video src="img/Por Qué Se Hizo La Avenida Más Ancha Del Mundo.mp4" autoplay muted loop playsinline></video>
+                    <span class="media-badge">VIDEO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">ARQUITECTURA Y PLAZAS</span>
+                    <h4>Avenidas Históricas y Cafés</h4>
+                    <p>Fachadas clásicas, plazas amplias, librerías emblemáticas y tertulias que forman parte del pulso diario.</p>
+                </div>
+            </article>
+
+            <!-- Cuadrito 2: Foto -->
+            <article class="media-card">
+                <div class="media-box">
+                    <img src="img/santelmo.jpg" alt="San Telmo y calles empedradas en Argentina">
+                    <span class="media-badge">FOTO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">MEMORIA Y BOHEMIA</span>
+                    <h4>San Telmo y Pasajes Clásicos</h4>
+                    <p>Adoquines, ferias de antigüedades, patios antiguos y el espíritu bohemio que guarda la historia porteña.</p>
+                </div>
+            </article>
+
+            <!-- Cuadrito 3: Video -->
+            <article class="media-card">
+                <div class="media-box">
+                    <video src="img/Diego Ortega & Aldana Silveyra - La Cumparsita - Gavito Tango Festival, Oct 4, 2025.mp4" autoplay muted loop playsinline></video>
+                    <span class="media-badge">VIDEO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">MÚSICA Y EXPRESIÓN</span>
+                    <h4>Tango, Arte y Barrios Creativos</h4>
+                    <p>Compases de bandoneón, murales contemporáneos y espacios culturales donde conviven tradición y vanguardia.</p>
+                </div>
+            </article>
+
+            <!-- Cuadrito 4: Foto -->
+            <article class="media-card">
+                <div class="media-box">
+                    <img src="img/waterfall-5040210_1920.webp" alt="Paisajes y naturaleza de Argentina">
+                    <span class="media-badge">FOTO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">NATURALEZA Y HORIZONTES</span>
+                    <h4>Valles, Pampa y Horizontes del Sur</h4>
+                    <p>Amplios cielos, caminos escénicos y contrastes naturales que reflejan la diversidad del territorio argentino.</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- PUENTE CULTURAL ARGENTINA - LIMA -->
+        <section class="bridge-box">
+            <div class="bridge-text">
+                <span class="tag-pill">PUENTE CULTURAL • ARGENTINA ↔ LIMA</span>
+                <h3>Entre el Río de la Plata y Lima: Diálogo de Arte, Letras y Música</h3>
+                <p>Argentina y el Perú mantienen un intercambio constante en el cine, la literatura, la música popular y la vida universitaria y creativa: historias, canciones y miradas que cruzan el continente y se encuentran en Lima.</p>
+            </div>
+            <div class="bridge-media">
+                <img src="img/arlima.jpg" alt="Conexión cultural entre Argentina y Lima">
+            </div>
+        </section>
+    </main>
+<script src="js/argentina.js"></script>
+    <a href="php/argentina.php"></a>
+</body>
+</html>

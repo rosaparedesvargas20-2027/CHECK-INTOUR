@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CHECK-IN TOURS</title>
+    <link rel="stylesheet" href="css/cartagena.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+  <header class="header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo Check-In Tours" class="logo-img">
+                <div>
+                    <span class="logo-title">CHECK-IN TOURS<span>.</span></span>
+                    <span class="logo-subtitle">Viajando por el Mundo</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" aria-label="Navegación principal">
+                <a href="index.html" class="nav-link active">Inicio</a>
+                <a href="#destinos" class="nav-link">Destinos</a>
+                <a href="#puentes" class="nav-link">Puentes Culturales</a>
+                <a href="reserva.html">Reservar Tour</a> 
+            </nav>
+
+            <a href="pasaporte.html" class="nav-passport" title="Abrir mi Pasaporte Postal">
+                <span>Pasaporte</span>
+                <span class="badge" id="navPassportBadge">0/20</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO CON VIDEO DE FONDO -->
+    <section class="destino-hero">
+        <video class="hero-bg-video" src="img/cartagena-hero.mp4" autoplay muted loop playsinline></video>
+        <div class="hero-bg-overlay"></div>
+
+        <div class="destino-hero-content">
+            <a href="index.html" class="back-link">← Volver a Destinos</a>
+            <span class="tag-pill">COLOMBIA • CARIBE SUDAMERICANO</span>
+            <h2>Cartagena de Indias: Murallas, Color y Caribe</h2>
+            <p>Balcones coloniales cubiertos de buganvillas, fortificaciones frente al mar, murales vibrantes en Getsemaní y una historia compartida con los puertos del Pacífico.</p>
+        </div>
+    </section>
+
+    <!-- GALERÍA EN CUADRITOS (VIDEOS Y FOTOS) -->
+    <main class="destino-container">
+        <div class="section-header">
+            <h3 class="gold-title">Imperdibles en Cartagena</h3>
+            <p class="section-desc">Recorre su ciudad amurallada, barrios creativos y costa caribeña en clips y postales.</p>
+        </div>
+
+        <div class="media-grid">
+            <!-- Cuadrito 1: Video -->
+            <article class="media-card">
+                <div class="media-box">
+                    <video src="img/cartagena-murallas.mp4" autoplay muted loop playsinline></video>
+                    <span class="media-badge">VIDEO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">PATRIMONIO HISTÓRICO</span>
+                    <h4>Ciudad Amurallada y Torre del Reloj</h4>
+                    <p>Plazas coloniales, casonas restauradas y murallas frente al atardecer del mar Caribe.</p>
+                </div>
+            </article>
+
+            <!-- Cuadrito 2: Foto -->
+            <article class="media-card">
+                <div class="media-box">
+                    <img src="img/cartagena-getsemani.jpg" alt="Calles coloridas de Getsemaní en Cartagena">
+                    <span class="media-badge">FOTO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">ARTE Y BARRIO</span>
+                    <h4>Barrio Getsemaní</h4>
+                    <p>Callejones adornados con murales, paraguas, música en las plazas y una identidad cultural llena de vida.</p>
+                </div>
+            </article>
+
+            <!-- Cuadrito 3: Video -->
+            <article class="media-card">
+                <div class="media-box">
+                    <video src="img/cartagena-sanfelipe.mp4" autoplay muted loop playsinline></video>
+                    <span class="media-badge">VIDEO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">ARQUITECTURA MILITAR</span>
+                    <h4>Castillo San Felipe de Barajas</h4>
+                    <p>Imponente fortaleza de piedra con túneles y miradores panorámicos sobre toda la bahía.</p>
+                </div>
+            </article>
+
+            <!-- Cuadrito 4: Foto -->
+            <article class="media-card">
+                <div class="media-box">
+                    <img src="img/cartagena-rosario.jpg" alt="Islas del Rosario y mar Caribe en Cartagena">
+                    <span class="media-badge">FOTO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">COSTA E ISLAS</span>
+                    <h4>Islas del Rosario y Bahía</h4>
+                    <p>Aguas cristalinas, arrecifes y rutas marítimas que conectan la ciudad con el archipiélago caribeño.</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- PUENTE CULTURAL CARTAGENA - LIMA -->
+        <section class="bridge-box">
+            <div class="bridge-text">
+                <span class="tag-pill">PUENTE CULTURAL • CARTAGENA ↔ LIMA</span>
+                <h3>De las Murallas del Caribe a las Rutas del Callao y Lima</h3>
+                <p>Cartagena de Indias y Lima compartieron durante siglos las rutas comerciales, el intercambio musical afrodescendiente y una arquitectura de balcones y plazas que hoy hermanan la memoria histórica de ambos puertos.</p>
+            </div>
+            <div class="bridge-media">
+                <img src="img/puente-cartagena-lima.jpg" alt="Conexión cultural entre Cartagena de Indias y Lima">
+            </div>
+        </section>
+    </main>
+<script src="js/cartagena.js"></script>
+<a href="php/cartagena.php" class="btn-link-php"></a>
+</body>
+</html>

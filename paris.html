@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CHECK-IN TOURS</title>
+    <link rel="stylesheet" href="css/paris.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo Check-In Tours" class="logo-img" onerror="this.style.display='none'">
+            <div>
+                <h1 class="brand-title">CHECK-IN TOURS<span>.</span></h1>
+                <p class="brand-sub">VIAJANDO POR EL MUNDO</p>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#destinos" class="active">Destinos</a>
+            <a href="index.html#puentes">Puentes Culturales</a>
+            <a href="reserva.html">Reservar Tour </a>
+        </nav>
+
+         <a href="pasaporte.html" class="nav-passport" title="Abrir mi Pasaporte Postal">
+                <span>Pasaporte</span>
+                <span class="badge" id="navPassportBadge">0/20</span>
+            </a>
+    </header>
+
+    <!-- HERO CON VIDEO DE FONDO -->
+    <section class="destino-hero">
+        <video class="hero-bg-video" src="img/paris.jpeg" autoplay muted loop playsinline></video>
+        <div class="hero-bg-overlay"></div>
+
+        <div class="destino-hero-content">
+            <a href="index.html" class="back-link">← Volver a Destinos</a>
+            <span class="tag-pill">FRANCIA • EUROPA OCCIDENTAL</span>
+            <h2>París: Bulevares, Sena y Arte en Cada Esquina</h2>
+            <p>Puentes que cruzan el río Sena, fachadas de piedra clara, librerías y cafés con encanto, y un puente cultural de arte, literatura y diseño que dialoga con Lima.</p>
+        </div>
+    </section>
+
+    <!-- GALERÍA EN CUADRITOS (VIDEOS Y FOTOS) -->
+    <main class="destino-container">
+        <div class="section-header">
+            <h3 class="gold-title">Imperdibles en París</h3>
+            <p class="section-desc">Recorre sus paseos junto al río, barrios creativos y escenas cotidianas entre clips y postales.</p>
+        </div>
+
+        <div class="media-grid">
+            <!-- Cuadrito 1: Video -->
+            <article class="media-card">
+                <div class="media-box">
+                    <video src="img/RÍO SENA - Ciudad de París, Francia.mp4" autoplay muted loop playsinline></video>
+                    <span class="media-badge">VIDEO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">RIBERA Y PUENTES</span>
+                    <h4>Río Sena y Puentes Históricos</h4>
+                    <p>Paseos junto al agua, puestos de libros antiguos a la orilla y vistas que cambian con cada hora del día.</p>
+                </div>
+            </article>
+
+            <!-- Cuadrito 2: Foto -->
+            <article class="media-card">
+                <div class="media-box">
+                    <img src="img/montmartre.jpg" alt="Montmartre y calles artísticas en París">
+                    <span class="media-badge">FOTO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">BOHEMIA Y MIRADORES</span>
+                    <h4>Montmartre y Calles de Artistas</h4>
+                    <p>Escalinatas, fachadas con hiedra, talleres de pintura y panorámicas abiertas sobre los tejados parisinos.</p>
+                </div>
+            </article>
+
+            <!-- Cuadrito 3: Video -->
+            <article class="media-card">
+                <div class="media-box">
+                    <video src="img/Museo Louvre 20 obras y salas que DEBES conocer Guía Completa.mp4" autoplay muted loop playsinline></video>
+                    <span class="media-badge">VIDEO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">ARQUITECTURA Y LUZ</span>
+                    <h4>Bulevares, Plazas y Museos</h4>
+                    <p>Avenidas arboladas, galerías emblemáticas y un ritmo elegante donde conviven historia, moda y cultura.</p>
+                </div>
+            </article>
+
+            <!-- Cuadrito 4: Foto -->
+            <article class="media-card">
+                <div class="media-box">
+                    <img src="img/cafparis.jpg" alt="Cafés y pastelerías en París">
+                    <span class="media-badge">FOTO</span>
+                </div>
+                <div class="media-info">
+                    <span class="media-cat">VIDA COTIDIANA</span>
+                    <h4>Cafés, Panaderías y Lectura</h4>
+                    <p>Mesitas orientadas hacia la calle, aromas de pan recién horneado y pausas ideales para conversar o escribir.</p>
+                </div>
+            </article>
+        </div>
+
+        <!-- PUENTE CULTURAL PARÍS - LIMA -->
+        <section class="bridge-box">
+            <div class="bridge-text">
+                <span class="tag-pill">PUENTE CULTURAL • PARÍS ↔ LIMA</span>
+                <h3>Entre las Letras, el Arte Visual y el Encuentro en Lima</h3>
+                <p>París y Lima comparten una historia rica en literatura, poesía, artes visuales y diseño: un diálogo creativo donde escritores, artistas y miradas estéticas han tendido puentes duraderos entre Europa y el Perú.</p>
+            </div>
+            <div class="bridge-media">
+                <img src="img/parislima.png" alt="Conexión cultural entre París y Lima">
+            </div>
+        </section>
+    </main>
+<script src="js/paris.js"></script>
+<a href="php/paris.php" class="btn-link-php"></a>
+</body>
+</html>
